@@ -1,3 +1,7 @@
+# Editor Temp files
+*~
+\#.*
+
 # Prerequisites
 *.d
 
@@ -28,8 +32,8 @@
 *.so.*
 *.dylib
 
-# Executables
-*.exe
+# Executables  -- alow old DOS file
+# *.exe
 *.out
 *.app
 *.i*86
@@ -50,3 +54,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+
+# MacFiles files
+.DS_Store

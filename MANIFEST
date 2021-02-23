@@ -1,0 +1,33 @@
+empire1.ar               46987
+     main.c               2090
+     object.c            14016
+     map.c               30881
+
+empire2.ar               47903
+     empire.c             6282
+     edit.c              11119
+     compmove.c          30502
+
+empire3.ar               47979
+     empire.h             8117
+     display.c           10953
+     bugs                28909
+
+empire4.ar               46435
+     game.c              21323
+     usermove.c          25112
+
+empire5.ar               46430
+     COPYING              7420
+     data.c               7529
+     util.c               7827
+     empire.6            23654
+
+empire6.ar               28563
+     MANIFEST             1760 (est)
+     empire.mk            1827
+     math.c               1959
+     attack.c             4813
+     extern.h             5788
+     README               5950
+     term.c               6466

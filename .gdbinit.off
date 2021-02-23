@@ -1,0 +1,5 @@
+b rndini
+run
+set (void) use_default_colors()
+c
+quit
