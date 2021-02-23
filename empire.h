@@ -21,7 +21,7 @@ empire.h -- type and constant declarations
 #endif
 
 /* Redefine some functions for portability. */
-
+#if 0
 #ifndef SYSV
 #define memcpy(dst,src,len) bcopy((src),(dst),(len))
 #define strchr(s,c) index(s,c)
@@ -33,6 +33,7 @@ char *memset();
 char *memcpy();
 #define bzero(dst,len) memset(dst,0,len)
 #endif
+#endif  /*  if 0 */
 
 typedef unsigned char uchar;
 

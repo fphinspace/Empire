@@ -224,9 +224,11 @@ char upper();
 void tupper();
 void check();
 
+#if 0
 /* randon routines we use */
 long time();
 void exit();
 void perror();
 void srand();
 char *strcpy();
+#endif  /*  if 0 */

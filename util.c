@@ -137,7 +137,7 @@ void
 pos_str (row, col, str, a, b, c, d, e, f, g, h)
 int row, col;
 char *str;
-int a, b, c, d, e, f, g, h;
+long a, b, c, d, e, f, g, h;
 {
 	(void) move (row, col);
 	addprintf (str, a, b, c, d, e, f, g, h);
@@ -147,7 +147,7 @@ void
 /* VARARGS1 */
 addprintf (str, a, b, c, d, e, f, g, h)
 char *str;
-int a, b, c, d, e, f, g, h;
+long a, b, c, d, e, f, g, h;
 {
 	char junkbuf[STRSIZE];
 	

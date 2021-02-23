@@ -42,7 +42,7 @@ void
 /* VARARGS1 */
 pdebug (s, a, b, c, d, e, f, g, h)
 char *s;
-int a, b, c, d, e, f, g, h;
+long a, b, c, d, e, f, g, h;
 {
 	if (!print_debug) return;
 	comment (s, a, b, c, d, e, f, g, h);
@@ -68,7 +68,7 @@ void
 topmsg(linep, buf, a, b, c, d, e, f, g, h)
 int linep;
 char *buf;
-int a, b, c, d, e, f, g, h;
+long a, b, c, d, e, f, g, h;
 {
 	if (linep < 1 || linep > NUMTOPS)
 		linep = 1;
@@ -88,7 +88,7 @@ void
 /* VARARGS1 */
 prompt (buf, a, b, c, d, e, f, g, h)
 char *buf;
-int a, b, c, d, e, f, g, h;
+long a, b, c, d, e, f, g, h;
 {
 	topmsg (1, buf, a, b, c, d, e, f, g, h);
 }
@@ -101,7 +101,7 @@ void
 /* VARARGS1 */
 error (buf, a, b, c, d, e, f, g, h)
 char *buf;
-int a, b, c, d, e, f, g, h;
+long a, b, c, d, e, f, g, h;
 {
 	topmsg (2, buf, a, b, c, d, e, f, g, h);
 }
@@ -114,7 +114,7 @@ void
 /* VARARGS1 */
 extra (buf, a, b, c, d, e, f, g, h)
 char *buf;
-int a, b, c, d, e, f, g, h;
+long a, b, c, d, e, f, g, h;
 {
 	topmsg (3, buf, a, b, c, d, e, f, g, h);
 }
@@ -155,7 +155,7 @@ void
 /* VARARGS1 */
 comment (buf, a, b, c, d, e, f, g, h)
 char *buf;
-int a, b, c, d, e, f, g, h;
+long a, b, c, d, e, f, g, h;
 {
 	if (need_delay) delay ();
 	topmsg (1, 0);

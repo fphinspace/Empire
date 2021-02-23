@@ -43,6 +43,7 @@ void init_colors()
 {
     start_color();
 
+#if 0
     init_pair(COLOR_BLACK, COLOR_BLACK, COLOR_BLACK);
     init_pair(COLOR_GREEN, COLOR_GREEN, COLOR_BLACK);
     init_pair(COLOR_RED, COLOR_RED, COLOR_BLACK);
@@ -51,6 +52,21 @@ void init_colors()
     init_pair(COLOR_MAGENTA, COLOR_MAGENTA, COLOR_BLACK);
     init_pair(COLOR_BLUE, COLOR_BLUE, COLOR_BLACK);
     init_pair(COLOR_YELLOW, COLOR_YELLOW, COLOR_BLACK);
+    
+#else    
+    init_pair(COLOR_BLACK, COLOR_WHITE, COLOR_BLACK);
+    init_pair(COLOR_GREEN, COLOR_GREEN, COLOR_WHITE);
+    init_pair(COLOR_RED, COLOR_RED, COLOR_WHITE);
+    init_pair(COLOR_CYAN, COLOR_CYAN, COLOR_WHITE);
+    init_pair(COLOR_WHITE, COLOR_BLACK, COLOR_WHITE);
+    init_pair(COLOR_MAGENTA, COLOR_MAGENTA, COLOR_WHITE);
+    init_pair(COLOR_BLUE, COLOR_BLUE, COLOR_WHITE);
+    init_pair(COLOR_YELLOW, COLOR_YELLOW, COLOR_WHITE);
+
+#endif /* 0 */
+
+	assume_default_colors(COLOR_BLACK,COLOR_WHITE);
+
 }
 #endif /* A_COLOR */
 

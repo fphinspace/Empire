@@ -396,12 +396,14 @@ continent contains 2 cities and a shore city, we set the value of the
 continent and return true.  Otherwise we return false.
 */
 
+static void mark_cont();
+
+
 static long ncity, nland, nshore;
 
 int good_cont (mapi)
 long mapi;
 {
-	static void mark_cont();
 
 	long val;
 
